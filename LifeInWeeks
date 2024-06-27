@@ -1,0 +1,8 @@
+age = input()
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+age_weeks = int(age) * 52
+lifespan_weeks=int(90 * 52)
+remaining_weeks = int(lifespan_weeks - age_weeks)
+result = str(remaining_weeks)
+print('You have '+ result +' weeks left.')
