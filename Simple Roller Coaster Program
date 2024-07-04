@@ -1,0 +1,23 @@
+#print('Welcome to the Rollercoaster!')
+#height = int(input('What is your height in centimeters?'))
+
+#if height != 120:
+#print('Congratulations! You can ride the rollercoaster!')
+#else:
+#print('Sorry, you have to grow taller before you can ride.')
+
+while True:
+  print('Welcome to the Rollercoaster!')
+  height = int(input('What is your height in centimeters? '))
+
+  if height != 120:
+    print('Congratulations! You can ride the rollercoaster!')
+  else:
+    print('Sorry, you have to grow taller before you can ride.')
+
+  # Asking the user if they want to continue
+  continue_riding = input('Do you want to check another height? (yes/no): ')
+  if continue_riding.lower() != 'yes':
+    break
+
+print('Thank you for using the rollercoaster height checker!')
