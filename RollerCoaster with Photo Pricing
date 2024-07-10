@@ -3,23 +3,25 @@ height = int(input('What is your height in centimeters?'))
 bill = 0
 
 if height >= 120:
-  print("You can ride the rollercoaster!")
-  age = int(input('What is your age?'))
-  if age < 12:
-    bill = 5
-    print('Your initial bill is $5.')
-  elif age <= 18:
-    bill = 7
-    print('Your initial bill is $7.')
-  else:
-    bill = 12
-    print('Your initial bill is $12.')
-    
-  photo_confirm = input("Do you want a photo taken? Y or N.")
-  if photo_confirm == "Y":
-    bill += 3
+    print("You can ride the rollercoaster!")
+    age = int(input('What is your age?'))
+    if age < 12:
+        bill = 5
+        print('Your initial bill is $5.')
+    elif age <= 18:
+        bill = 7
+        print('Your initial bill is $7.')
+    elif age >= 45 and age <= 55:
+        bill = 0
+        print('Your initial bill is $0.')
+    else:
+        bill = 12
+        print('Your initial bill is $12.')
 
-  print(f"Your final bill is ${bill}")
+    photo_confirm = input("Do you want a photo taken? Y or N.")
+    if photo_confirm == "Y" or photo_confirm == "y":
+        bill += 3
 
+    print(f'Your final bill is ${bill}.')
 else:
-  print("Sorry, you have to grow taller before you can ride.")
+    print("Sorry, you have to grow taller before you can ride.")
